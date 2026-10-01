@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For GV ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="floating-hearts">
+    <span>♡</span>
+    <span>✦</span>
+    <span>♡</span>
+    <span>✧</span>
+    <span>♡</span>
+  </div>
+
+  <!-- OPENING -->
+  <section class="screen intro" id="intro">
+    <div class="tiny-label">a tiny internet surprise</div>
+
+    <h1>psst... <em>GV</em> 👀</h1>
+
+    <p>I made you a little something.</p>
+
+    <button class="main-btn" onclick="openSurprise()">
+      Open your surprise <span>→</span>
+    </button>
+  </section>
+
+
+  <!-- BIRTHDAY -->
+  <section class="screen birthday hidden" id="birthday">
+
+    <div class="confetti" id="confetti"></div>
+
+    <div class="tiny-label">today is officially about you</div>
+
+    <h2>
+      Happy Birthday,<br>
+      <em>GV!</em> 🎂
+    </h2>
+
+    <p class="subtitle">
+      another year of being you...<br>
+      and somehow, I'm still here. 😭
+    </p>
+
+    <div class="sticker-row">
+      <span>10/10 human</span>
+      <span>certified yapper</span>
+      <span>professional menace</span>
+    </div>
+
+    <button class="text-btn" onclick="showSection('chaos')">
+      okay, what else? ↓
+    </button>
+
+  </section>
+
+
+  <!-- CHAOS -->
+  <section class="screen section-page hidden" id="chaos">
+
+    <div class="tiny-label">important documentation</div>
+
+    <h2>
+      Reasons you're<br>
+      <em>my favourite idiot</em>
+    </h2>
+
+    <div class="cards">
+
+      <div class="mini-card rotate-left">
+        <div class="card-icon">🗣️</div>
+        <h3>Professional Yapper</h3>
+        <p>Could turn a 2-minute story into a full documentary.</p>
+      </div>
+
+      <div class="mini-card rotate-right">
+        <div class="card-icon">🚨</div>
+        <h3>Certified Menace</h3>
+        <p>Peace was never an option when you're around.</p>
+      </div>
+
+      <div class="mini-card rotate-left">
+        <div class="card-icon">😂</div>
+        <h3>Laugh Supplier</h3>
+        <p>Half our memories make absolutely no sense.</p>
+      </div>
+
+      <div class="mini-card rotate-right">
+        <div class="card-icon">🤝</div>
+        <h3>Still Here Somehow</h3>
+        <p>And honestly, that's a pretty solid achievement.</p>
+      </div>
+
+    </div>
+
+    <button class="main-btn" onclick="showSection('memories')">
+      show me the memories 📸
+    </button>
+
+  </section>
+
+
+  <!-- MEMORIES -->
+  <section class="screen section-page hidden" id="memories">
+
+    <div class="tiny-label">evidence that we actually have fun</div>
+
+    <h2>
+      Little bits of<br>
+      <em>us</em> ♡
+    </h2>
+
+    <p class="hint">
+      We'll add your photos here later!
+    </p>
+
+    <div class="photo-grid">
+
+      <div class="polaroid p1">
+        <div class="photo">
+          <span>your photo here ♡</span>
+        </div>
+        <p>that one day...</p>
+      </div>
+
+      <div class="polaroid p2">
+        <div class="photo">
+          <span>your photo here ♡</span>
+        </div>
+        <p>chaos, as usual</p>
+      </div>
+
+      <div class="polaroid p3">
+        <div class="photo">
+          <span>your photo here ♡</span>
+        </div>
+        <p>one for the memories</p>
+      </div>
+
+      <div class="polaroid p4">
+        <div class="photo">
+          <span>your photo here ♡</span>
+        </div>
+        <p>another silly one</p>
+      </div>
+
+    </div>
+
+    <button class="main-btn" onclick="showSection('letter')">
+      one last thing... 💌
+    </button>
+
+  </section>
+
+
+  <!-- LETTER -->
+  <section class="screen letter-page hidden" id="letter">
+
+    <div class="tiny-label">from me to you</div>
+
+    <div class="letter">
+
+      <div class="letter-tape"></div>
+
+      <h2>Dear GV,</h2>
+
+      <p>
+        I don't really know how to put years of friendship into one little
+        website, but I guess this is my attempt. 😭
+      </p>
+
+      <p>
+        Thank you for being one of those people who can turn the most normal
+        days into something I'll actually remember. For the random
+        conversations, stupid jokes, unnecessary drama, the laughs, the chaos,
+        and all those little moments that probably didn't seem important at the
+        time but somehow became some of my favourite memories.
+      </p>
+
+      <p>
+        We've changed, grown, survived questionable decisions, and somehow
+        still ended up here. 😂
+      </p>
+
+      <p>
+        I hope this year brings you so many good things — the kind that make
+        you genuinely happy, the kind you don't have to force, and the kind
+        you deserve.
+      </p>
+
+      <p>
+        And no matter how much life changes, I hope we always have a little bit
+        of this same stupid chaos between us.
+      </p>
+
+      <p class="final-line">
+        Happy birthday, GV. 🫶🏻
+        <br><br>
+        Now go enjoy your day, birthday idiot.
+        <br>
+        You're stuck with me for a while longer. ♡
+      </p>
+
+    </div>
+
+    <button class="main-btn small" onclick="makeItRain()">
+      one last surprise ✨
+    </button>
+
+  </section>
+
+
+  <!-- FINAL -->
+  <section class="screen final-page hidden" id="final">
+
+    <div class="final-symbol">✦</div>
+
+    <h2>That's it.</h2>
+
+    <p>
+      No big speech.<br>
+      No dramatic ending.<br>
+      Just a little reminder...
+    </p>
+
+    <h3>
+      I'm really glad you're my best friend. ♡
+    </h3>
+
+    <div class="final-hearts">
+      ♡　✦　♡　✦　♡
+    </div>
+
+    <button class="text-btn" onclick="location.reload()">
+      start again ↻
+    </button>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
